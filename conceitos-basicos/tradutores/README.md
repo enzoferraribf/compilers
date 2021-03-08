@@ -29,8 +29,6 @@
 
 ## **Montadores**
 
----
-
 ```ts
 montador(textoFonte: BaixoNivel) => textoObjeto: Maquina;
 ```
@@ -42,8 +40,6 @@ O montador pode necessitar de uma tabela de símbolos, para fazer o link de ende
 <br />
 
 ## **Compiladores**
-
----
 
 Compilador é um software que faz parte de um conjunto especial de softwares conhecidos como software básico.
 
@@ -60,8 +56,6 @@ compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 <br />
 
 ## **Interpretadores**
-
----
 
 ```ts
  interpretador(textoFonte: AltoNivel) => executar(textoFonte);
@@ -80,8 +74,6 @@ compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 <br />
 
 ## **(Engenharia reversa)**
-
----
 
 <br/>
 

@@ -6,20 +6,21 @@ do mesmo compilador em alguma outra denominação. **Um mesmo compilador pode se
 <br/>
 
 ## **Transpiladores**
----
+
 ```ts
 transpilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel
 ```
 
-**Obs.:** Quando a linguagem que você escreve é transformada para JavaScript, elas são chamados de linguagem ***compile-to-JS*** 
+**Obs.:** Quando a linguagem que você escreve é transformada para JavaScript, elas são chamados de linguagem **_compile-to-JS_**
+
 - **Ex.:** CoffeScript, TypeScript, ES2015...
 
 <br/>
 
 ## **Filtros**
----
+
 ```ts
-filtro(textoFonte: AltoNivel) => (textoObjeto ~= textoFonte): AltoNivel 
+filtro(textoFonte: AltoNivel) => (textoObjeto ~= textoFonte): AltoNivel
 ```
 
 **Obs.:** Normalmente usados para uniformizar códigos em padrões ou variações de determinada linguagem
@@ -27,7 +28,7 @@ filtro(textoFonte: AltoNivel) => (textoObjeto ~= textoFonte): AltoNivel
 <br/>
 
 ## **Pré-processadores**
----
+
 ```ts
 tradutor(
   preprocessador(textoFonte: AltoNivel) => textoObjeto: AltoNivel

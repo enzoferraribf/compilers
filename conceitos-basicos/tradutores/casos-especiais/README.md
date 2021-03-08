@@ -1,7 +1,6 @@
 # Compiladores | Casos especiais
 
-Existem outras denominações para `compiladores especiais` a depender de suas características. Classificar um compilador por uma destas denominações especiais **não exclui** a possibilidade da classificação
-do mesmo compilador em alguma outra denominação. **Um mesmo compilador pode ser classificado em várias destas denominações ao mesmo tempo** (desde que respeite as características definidas).
+Existem outras denominações para `compiladores especiais` a depender de suas características. Classificar um compilador por uma destas denominações especiais **não exclui** a possibilidade da classificação do mesmo compilador em alguma outra denominação. **Um mesmo compilador pode ser classificado em várias destas denominações ao mesmo tempo** (desde que respeite as características definidas).
 
 <br/>
 

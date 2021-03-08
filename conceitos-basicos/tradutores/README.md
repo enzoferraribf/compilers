@@ -27,15 +27,13 @@
 
 <br/>
 
-## **Montadores**
+## **Montadores (Assemblers)**
 
 ```ts
 montador(textoFonte: BaixoNivel) => textoObjeto: Maquina;
 ```
 
-**Obs.:** Montador = Assembler
-
-O montador pode necessitar de uma tabela de símbolos, para fazer o link de endereços a nomes criados no programa.
+- O montador pode necessitar de uma tabela de símbolos, para fazer o link de endereços a nomes criados no programa.
 
 <br />
 
@@ -47,9 +45,9 @@ Compilador é um software que faz parte de um conjunto especial de softwares con
 compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 ```
 
-**Tempo de compilação:** momento em que o código é compilado.
+- **Tempo de compilação:** momento em que o código é compilado.
 
-**Tempo de execução:** momento em que o código é executado pelo SO.
+- **Tempo de execução:** momento em que o código é executado pelo SO.
 
 [**Casos especiais**](/conceitos-basicos/tradutores/casos-especiais)
 
@@ -74,8 +72,6 @@ compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 <br />
 
 ## **(Engenharia reversa)**
-
-<br/>
 
 ### **Decompiladores**
 

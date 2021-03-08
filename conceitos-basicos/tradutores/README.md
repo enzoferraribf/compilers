@@ -1,4 +1,5 @@
 # **Tradutores**
+
 | Conceitos  |    Texto     |    Linguagem     |
 | :--------: | :----------: | :--------------: |
 | **Fonte**  | Texto fonte  | Linguagem fonte  |
@@ -7,14 +8,16 @@
 <br />
 
 ### Conceitos envolvidos:
+
 - **Texto**: elemento trabalhado pela tradução
-    - **Ex.:** código, escrita, fala, desenho...
+  - **Ex.:** código, escrita, fala, desenho...
 - **Linguagem**: universo conhecido pelo tradutor
-    - **Ex.:** Java, C, português, inglês
+  - **Ex.:** Java, C, português, inglês
 - **Fonte**: entrada entendida pelo tradutor
 - **Objeto**: saída produzida pelo tradutor
 
 ### Características
+
 - Mantêm o **significado**
 - Traduz apenas o que for **relevante**
 
@@ -25,7 +28,9 @@
 <br/>
 
 ## **Montadores**
+
 ---
+
 ```ts
 montador(textoFonte: BaixoNivel) => textoObjeto: Maquina;
 ```
@@ -37,7 +42,9 @@ O montador pode necessitar de uma tabela de símbolos, para fazer o link de ende
 <br />
 
 ## **Compiladores**
+
 ---
+
 Compilador é um software que faz parte de um conjunto especial de softwares conhecidos como software básico.
 
 ```ts
@@ -48,12 +55,14 @@ compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 
 **Tempo de execução:** momento em que o código é executado pelo SO.
 
-[**Casos especiais**](/conceitos-basicos/compilador/casos-especiais.md)
+[**Casos especiais**](/conceitos-basicos/tradutores/casos-especiais)
 
 <br />
 
 ## **Interpretadores**
+
 ---
+
 ```ts
  interpretador(textoFonte: AltoNivel) => executar(textoFonte);
 ```
@@ -71,7 +80,9 @@ compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 <br />
 
 ## **(Engenharia reversa)**
+
 ---
+
 <br/>
 
 ### **Decompiladores**

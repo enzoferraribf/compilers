@@ -1,3 +1,3 @@
 # Conceitos Básicos
 
-- [**Tradutores**](/conceitos-basicos/tradutores.md)
+- [**Tradutores**](/conceitos-basicos/tradutores)

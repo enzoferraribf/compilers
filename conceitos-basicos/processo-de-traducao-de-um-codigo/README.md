@@ -39,7 +39,7 @@ texto_fonte
 
 ## **Montadores**
 
-[Detalhes](/conceitos-basicos/tradutores#montadores)
+[Detalhes](/conceitos-basicos/tradutores#montadores-assemblers)
 
 - Embutido na maior parte dos compiladores comerciais, embora não seja parte da compilação.
 

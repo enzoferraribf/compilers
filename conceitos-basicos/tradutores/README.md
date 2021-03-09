@@ -21,7 +21,7 @@
 
 <br/>
 
-**Obs.:** linguagem de baixo nível = linguagem de montagem = assembly
+**Obs.:** linguagem de baixo nível = linguagem de montagem = assembly | bytecode | autocode
 
 <br/>
 

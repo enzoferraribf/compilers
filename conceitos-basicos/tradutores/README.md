@@ -5,8 +5,6 @@
 | **Fonte**  | Texto fonte  | Linguagem fonte  |
 | **Objeto** | Texto objeto | Linguagem objeto |
 
-<br />
-
 ### Conceitos envolvidos:
 
 - **Texto**: elemento trabalhado pela tradução

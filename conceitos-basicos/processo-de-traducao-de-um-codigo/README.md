@@ -13,7 +13,7 @@ texto_fonte
 
 ## **Pré-Processadores**
 
-[Detalhes](/conceitos-basicos/tradutores/casos-especiais)
+[Detalhes](/conceitos-basicos/tradutores/casos-especiais#pré-processadores)
 
 - Produzem dados de entrada para outros compiladores
 - É um módulo opcional (pode não existir na tradução)
@@ -30,7 +30,7 @@ texto_fonte
 
 ## **Compiladores**
 
-[Detalhes](/conceitos-basicos/tradutores)
+[Detalhes](/conceitos-basicos/tradutores#compiladores)
 
 - O último da cadeia de compiladores, o que irá traduzir o texto para uma linguagem de baixo nível
 - Produzem textos para o processo de montagem
@@ -39,7 +39,7 @@ texto_fonte
 
 ## **Montadores**
 
-[Detalhes](/conceitos-basicos/tradutores)
+[Detalhes](/conceitos-basicos/tradutores#montadores)
 
 - Embutido na maior parte dos compiladores comerciais, embora não seja parte da compilação.
 

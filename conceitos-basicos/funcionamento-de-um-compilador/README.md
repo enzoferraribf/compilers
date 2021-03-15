@@ -4,8 +4,8 @@
 
 Enxerga todo o trabalho do compilador dividido em dois grandes blocos de atividade:
 
-- **[Análise](./funcionamento-de-um-compilador#analise)** (Analisador Léxico, Analisador Sintático, Analisador Semântico)
-- **[Síntese](./funcionamento-de-um-compilador#sintese)** (Gerador de Código Intermediário, Otimizador de Código e Gerador de Código Final)
+- **[Análise](/conceitos-basicos/funcionamento-de-um-compilador#analise)** (Analisador Léxico, Analisador Sintático, Analisador Semântico)
+- **[Síntese](/conceitos-basicos/funcionamento-de-um-compilador#sintese)** (Gerador de Código Intermediário, Otimizador de Código e Gerador de Código Final)
 
 ![Modelo análise-síntese](./modelo-analise-sintese.png)
 

@@ -118,15 +118,15 @@ Gerencia o repositório tabela de símbolos
 
 Suponha a sentença `pos = 8 + 5 * tempo`. Após ser submetido ao *analisador léxico*, é preenchida a tabela de símbolos (mediado pelo *gerenciador da tabela de símbolos*):
 
-|  ID |  Átomo  |       Tipo      | Identificador |
-| :-: | :-----: | :-------------: | :-----------: |
-|  1  |  `pos`  |    `inteiro`    |     `id1`     |
-|  2  |   `=`   |   `atribuição`  |      `sa`     |
-|  3  |   `8`   |    `inteiro`    |     `co1`     |
-|  4  |   `+`   |      `soma`     |      `ss`     |
-|  5  |   `5`   |    `inteiro`    |     `co2`     |
-|  6  |   `*`   | `multiplicação` |      `sm`     |
-|  7  | `tempo` |      `real`     |     `id2`     |
+|  ID |  Lexeme  |   Tipo    | Átomo |
+| :-: | :------: | :-------: | :---: |
+|  1  |  `pos`   |  `real`   | `id1` |
+|  2  |   `=`    |           | `sa`  |
+|  3  |   `8`    | `inteiro` | `co1` |
+|  4  |   `+`    |           | `ss`  |
+|  5  |   `5`    | `inteiro` | `co2` |
+|  6  |   `*`    |           | `sm`  |
+|  7  | `tempo`  |  `real`   | `id2` |
 
 Preenchida a tabela, a árvore sintática é gerada pelo *analisador sintático*
 
@@ -163,11 +163,21 @@ aux3 = int_to_real(co1)
 aux4 = aux3 + aux2
 id1 = aux4
 ```
+
 O *otimizador de código* recebe o código intermediário e realiza o processo de otimização
 
 ```
-aux1 = 5.0 * id2
-id1 = 8.0 + aux1
+aux2 = 5.0 * id2
+id1 = 8.0 + aux2
 ```
 
-...to be continue
+Por fim, o *gerador de código final* traduz para assembly 
+
+```
+MOVF    id2,R1
+MULF    7.0,R1
+MOVF    R1,aux2
+MOVF    aux2,R1
+ADDF    3.0,R1
+MOVF    R1,id1
+```

@@ -1,22 +1,11 @@
 # **Funcionamento de um Compilador**
 
-## **Modelo análise síntese**
+![Esquema das partes de um compilador](./modelo-geral.png)
 
-Enxerga todo o trabalho do compilador dividido em dois grandes blocos de atividade:
+## Modelos
 
-- **[Análise](/conceitos-basicos/funcionamento-de-um-compilador#análise)** (Analisador Léxico, Analisador Sintático, Analisador Semântico)
-- **[Síntese](/conceitos-basicos/funcionamento-de-um-compilador#síntese)** (Gerador de Código Intermediário, Otimizador de Código e Gerador de Código Final)
-
-![Modelo análise-síntese](./modelo-analise-sintese.png)
-
-<br/>
-
-## **Análise**
-
-- Quebra o programa fonte em suas partes constituintes
-- Cria uma representação intermediária equivalente ao programa fonte
-- As operações realizadas pelo programa fonte e os elementos utilizados são identificados
-- Grava estas informações numa estrutura hierárquica (árvore sintática estendida)
+- [Análise / Síntese](/conceitos-basicos/funcionamento-de-um-compilador/analise-sintese)
+- [Front-End / Back-End](/conceitos-basicos/functionamento-de-um-compilador/front-end-back-end)
 
 ### **Analisador Léxico**
 
@@ -51,15 +40,6 @@ Verifica coerência de significados
 - Efetua ou não conversões de tipo (depende da definição da linguagem)
 - Pode eliminar ineficiência na estrutura
 
-<br/>
-
-## **Síntese**
-
-- Constrói o programa objeto a partir da representação intermediária do bloco de análise
-- Requer técnicas mais especializadas
-
-**Sub-partes:** Gerador de Código Intermediário, Otimizador de código e Gerador de Código Final
-
 ### **Gerador de Código Intermediário**
 
 Traduz para lógica de formato de máquina
@@ -90,10 +70,6 @@ Gera o código final resultado da compilação
 - Nos casos mais comuns as instruções em código intermediário são traduzidas emde instruções em linguagem de montagem
 - Aspecto crítico: uso de registradores de cada arquitetura de máquina
 
-<br/>
-
-## **Módulos Globais**
-
 ### **Rotinas de tratamento de Erros**
 
 Controla a ocorrência de erros
@@ -116,19 +92,19 @@ Gerencia o repositório tabela de símbolos
 
 ## **Exemplo**
 
-Suponha a sentença `pos = 8 + 5 * tempo`. Após ser submetido ao *analisador léxico*, é preenchida a tabela de símbolos (mediado pelo *gerenciador da tabela de símbolos*):
+Suponha a sentença `pos = 8 + 5 * tempo`. Após ser submetido ao _analisador léxico_, é preenchida a tabela de símbolos (mediado pelo _gerenciador da tabela de símbolos_):
 
-|  ID |  Lexeme  |   Tipo    | Átomo |
-| :-: | :------: | :-------: | :---: |
-|  1  |  `pos`   |  `real`   | `id1` |
-|  2  |   `=`    |           | `sa`  |
-|  3  |   `8`    | `inteiro` | `co1` |
-|  4  |   `+`    |           | `ss`  |
-|  5  |   `5`    | `inteiro` | `co2` |
-|  6  |   `*`    |           | `sm`  |
-|  7  | `tempo`  |  `real`   | `id2` |
+| ID  | Lexeme  |   Tipo    | Átomo |
+| :-: | :-----: | :-------: | :---: |
+|  1  |  `pos`  |  `real`   | `id1` |
+|  2  |   `=`   |           | `sa`  |
+|  3  |   `8`   | `inteiro` | `co1` |
+|  4  |   `+`   |           | `ss`  |
+|  5  |   `5`   | `inteiro` | `co2` |
+|  6  |   `*`   |           | `sm`  |
+|  7  | `tempo` |  `real`   | `id2` |
 
-Preenchida a tabela, a árvore sintática é gerada pelo *analisador sintático*
+Preenchida a tabela, a árvore sintática é gerada pelo _analisador sintático_
 
 ```
     sa
@@ -140,7 +116,7 @@ id1    ss
       co2    id2
 ```
 
-O *analisador semântico* verifica os tipos requeridos pelas operações e altera a árvore de forma a respeitar esses tipos
+O _analisador semântico_ verifica os tipos requeridos pelas operações e altera a árvore de forma a respeitar esses tipos
 
 ```
     sa
@@ -154,7 +130,7 @@ id1    ss
        co2
 ```
 
-Finaliza a etapa de análise, o *gerador de código intermediário* realiza o processo de síntese do código
+Finaliza a etapa de análise, o _gerador de código intermediário_ realiza o processo de síntese do código
 
 ```
 aux1 = int_to_real(co2)
@@ -164,14 +140,14 @@ aux4 = aux3 + aux2
 id1 = aux4
 ```
 
-O *otimizador de código* recebe o código intermediário e realiza o processo de otimização
+O _otimizador de código_ recebe o código intermediário e realiza o processo de otimização
 
 ```
 aux2 = 5.0 * id2
 id1 = 8.0 + aux2
 ```
 
-Por fim, o *gerador de código final* traduz para assembly 
+Por fim, o _gerador de código final_ traduz para assembly
 
 ```
 MOVF    id2,R1

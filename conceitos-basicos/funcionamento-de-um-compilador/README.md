@@ -5,7 +5,7 @@
 ## Modelos
 
 - [Análise / Síntese](/conceitos-basicos/funcionamento-de-um-compilador/analise-sintese)
-- [Front-End / Back-End](/conceitos-basicos/functionamento-de-um-compilador/front-end-back-end)
+- [Front-End / Back-End](/conceitos-basicos/functionamento-de-um-compilador/frontend-backend)
 
 ### **Analisador Léxico**
 

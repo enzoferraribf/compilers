@@ -48,7 +48,7 @@ Traduz para lógica de formato de máquina
 - Gera programa para execução em máquina abstrata, fictícia
 - Deve gerar código que seja fácil de produzir e, ao mesmo tempo, fácil de traduzir
 - Existem vários tipos de representação usados
-- O código deve ser indenpendente de máquina
+- O código deve ser independente de máquina
 
 ### **Otimizador de Código**
 

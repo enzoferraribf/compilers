@@ -41,7 +41,7 @@ Durante a compilação, itens ainda não conhecidos pelo compilador são substiu
 
 <br/>
 
-## Blocos || Overlays || Fases (ou overlays)
+## Blocos || Overlays || Fases
 
 Definir a quantidade de blocos de código que o compilador vai ter
 

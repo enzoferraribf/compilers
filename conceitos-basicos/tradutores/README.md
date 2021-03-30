@@ -80,7 +80,7 @@ compilador(textoFonte: AltoNivel) => textoObjeto: AltoNivel | BaixoNivel
 ### **Demontadores**
 
 ```ts
-demontador(textoFonte: Maquina) => textoObjeto: BaixoNivel;
+demontador(textoFonte: Maquina) => textoObjeto: Montagem;
 ```
 
 ### **Obfuscadores**

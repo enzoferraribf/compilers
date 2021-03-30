@@ -28,7 +28,7 @@
 ## **Montadores (Assemblers)**
 
 ```ts
-montador(textoFonte: BaixoNivel) => textoObjeto: Maquina;
+montador(textoFonte: Montagem) => textoObjeto: Maquina;
 ```
 
 - O montador pode necessitar de uma tabela de símbolos, para fazer o link de endereços a nomes criados no programa.

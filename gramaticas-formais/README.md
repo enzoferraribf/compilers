@@ -42,6 +42,8 @@ Símbolo que inicia todo o processo de produção de sentenças da linguagem.
 
 ## Processo de Derivação
 
+[Detalhes](processo-de-derivacao)
+
 - Sempre é iniciado pelo símbolo inicial da gramática `S`
 - Obedecendo as leis de formação, tenta-se chegar à cadeia em questão. Se for possível, então a cadeia é sentença
 - A linguagem é o conjunto de todas as sentenças possíveis de serem formadas pelas leis de formação
@@ -86,3 +88,5 @@ P = {
 
 L = { xy, xyxy, xyxyxy, ..., z, zx, zxx, zxxx, ... }
 ```
+
+## [Hierarquia de Chomsky](hierarquia-de-chomsky)

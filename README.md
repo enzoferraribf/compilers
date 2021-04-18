@@ -5,3 +5,5 @@ Esse é um repositório destinado ao estudo de compiladores. Aqui estarão arqui
 ## **Estrutura**
 
 - [**Conceitos Básicos**](/conceitos-basicos)
+- [**Teoria das Linguagens**](/teoria-das-linguagens)
+- [**Gramáticas Formais**](/gramaticas-formais)

@@ -38,6 +38,7 @@ Conjunto das leis de formação de sentenças
 ### Símbolo Inicial `S`
 
 Símbolo que inicia todo o processo de produção de sentenças da linguagem.
+
 - `S ∊ V`: Pertence ao vocabulário `V`
 
 ## Processo de Derivação
@@ -68,11 +69,12 @@ Define a forma geral de todas as sentenças de uma linguagem
 - `x+`: Um símbolo x deve aparecer pelo menos uma vez
 - `x*`: Um símbolo x deve aparecer zero ou mais vezes
 - `x|y`: Indica uma alternativa entre o símbolo x ou y
-- `()`: Agrupa cadeias a serem trabalhadas 
+- `()`: Agrupa cadeias a serem trabalhadas
 
 ## Exemplo
 
 gramática que descreve `(xy)+|zx*`
+
 ```
 G = (V, Σ, P, S)
 V = { S, A, B, x, y, z }
@@ -90,3 +92,5 @@ L = { xy, xyxy, xyxyxy, ..., z, zx, zxx, zxxx, ... }
 ```
 
 ## [Hierarquia de Chomsky](hierarquia-de-chomsky)
+
+## [Exercícios](exercicios)

@@ -1,5 +1,9 @@
 # Processo de Derivação
 
+- Sempre é iniciado pelo símbolo inicial da gramática `S`
+- Obedecendo as leis de formação, tenta-se chegar à cadeia em questão. Se for possível, então a cadeia é sentença
+- A linguagem é o conjunto de todas as sentenças possíveis de serem formadas pelas leis de formação
+
 Uma cadeia `ω` será sentença se:
 
 - Existir uma sequencia de substituições definidas na gramática que permita partir do simbolo inicial `S` e chegar até a cadeia `ω`

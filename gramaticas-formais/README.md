@@ -9,6 +9,7 @@
 - [Exercícios](exercicios)
 - [Notações Gramaticais](notacoes-gramaticais)
 - [Transformação entre Notações](transformacao-entre-notacoes)
+- [Ambiguidade](ambiguidade)
 
 ## Exemplo
 

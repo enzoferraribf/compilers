@@ -7,3 +7,4 @@ Esse é um repositório destinado ao estudo de compiladores. Aqui estarão arqui
 - [**Conceitos Básicos**](/conceitos-basicos)
 - [**Teoria das Linguagens**](/teoria-das-linguagens)
 - [**Gramáticas Formais**](/gramaticas-formais)
+- [**Reconhecedores**](/reconhecedores)

@@ -1,3 +1,5 @@
 # Reconhecedores
 
-- [Reconhecedores](/reconhecedores)
+- [Reconhecedores](./reconhecedores)
+- [Autômatos Finitos](./automatos-finitos)
+- [Notações](./notacoes)

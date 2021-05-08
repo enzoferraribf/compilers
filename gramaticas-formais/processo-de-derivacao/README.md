@@ -12,8 +12,6 @@ Uma cadeia `ω` será sentença se:
 
 ## Representação
 
-- `=>`: Representa passos de derivação (não confundir com `->`)
-  - `->`: Usado para construir as regras de substituição
 - `=+>` **Derivação direta:** indica que houve apenas 1 passo de derivação (aplicação de apenas 1 produção gramatical)
 - `=*>` **Derivação não trivial:** indica que, de uma cadeia para outra, houve 1 ou mais substituições
 - `=>` **Derivação (pura e simples):** Indica a derivação completa, partindo do primeiro símbolo, chegando até a cadeia final (pula todas as etapas intermediárias)

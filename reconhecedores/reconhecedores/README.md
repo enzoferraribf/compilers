@@ -3,9 +3,9 @@
 Sua função é indicar se uma determinada cadeia pertence ou não a uma linguagem através da aplicação de um conjunto de regras de teste.
 
 ```
-               ┌-----------------┐
+               ┌─────────────────┐
  Cadeia a   -→ |  reconhecedor   | -→ true | false
-ser testada    |┌---------------┐|
+ser testada    |┌───────────────┐|
                └┘ conf. inicial └┘
 ```
 
@@ -19,15 +19,15 @@ ser testada    |┌---------------┐|
 
 ```
                     2
-... ┬-┬-┬-┬-┬-┬-┬-┬-┬-┬-┬-┬- ...
-  1 ┴-┴-┴-┴-┴-┴-┴-┴-┴-┴-┴-┴-
+... ┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─ ...
+  1 ┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─
      ↑
-     | 3     ┌---┐
-     └-------┤ 4 |
-             └┬-↑┘
-             ┌↓-┴┐
+     | 3     ┌───┐
+     └───────┤ 4 |
+             └┬─↑┘
+             ┌↓─┴┐
              | 5 | 6
-             └---┘
+             └───┘
 ```
 
 - `1` **Texto de Entrada:** cadeia que será testada pelo reconhecedor.

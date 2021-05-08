@@ -199,7 +199,7 @@ Gera `L = { bc, abc, aabc, aabcbc, ab, abb, abbb, ... }`
 
 ```
 S = a* (b c)⁺ X
-X = a b | b* | c+ b
+X = a b | b* | c⁺ b
 ```
 
 Gera `L = { bc, bcbc, bcab, bcb, bcbcbb, abc, aabcbccccb, ... }`

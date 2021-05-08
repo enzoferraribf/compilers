@@ -44,7 +44,7 @@ G = (
 
 Além das restrições acima, precisa obedecer o seguinte:
 
-- `α -> β` `|α| <= |β|`: Uma produção não pode diminuir o tamanho da proxima cadeia
+- `α -> β` `|α| ≤ |β|`: Uma produção não pode diminuir o tamanho da proxima cadeia
 
 ```
 G = (

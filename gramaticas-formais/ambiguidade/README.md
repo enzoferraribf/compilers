@@ -10,11 +10,11 @@ Gramática
 
 Geração da sentença "aaaaabb"
           S
-      ┌---┴---┐
+      ┌───┴───┐
       A       B
-    ┌-┼-┐   ┌-┼-┐
+    ┌─┼─┐   ┌─┼─┐
     a a A   B b b
-      ┌-┼-┐ |
+      ┌─┼─┐ |
       a a A a
           |
           ε
@@ -57,9 +57,9 @@ Se formos gerar a sentença `8 - 5 + 7`, temos duas árvores possíveis
 
 ```
         exp                  exp
-     ┌---┼---┐            ┌---┼---┐
+     ┌───┼───┐            ┌───┼───┐
     exp  +  exp          exp  -  exp
-  ┌--┼--┐    |            |    ┌--┼--┐
+  ┌──┼──┐    |            |    ┌──┼──┐
  exp - exp fator   ou   fator exp + exp
   |     |    |            |    |     |
 fator fator  7            8  fator fator
@@ -123,17 +123,17 @@ Gramática
   <exp> ::= <exp> + <fator> | <exp> - <fator> | <fator>
   <fator> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
-Sentença           ┌------------┬-----------------┐
-                   | Operadores | Associatividade |
-  8 - 5 + 7        |     +      |    esquerda     |
+Sentença           ┌────────────┬─────────────────┐
+                   │ Operadores | Associatividade |
+  8 - 5 + 7        │     +      |    esquerda     |
                    |     -      |    esquerda     |
-                   └------------┴-----------------┘
+                   └────────────┴─────────────────┘
 
 Árvore sintática
           exp
-       ┌---┼---┐
+       ┌───┼───┐
       exp  + fator
-    ┌--┼---┐   |
+    ┌──┼───┐   |
    exp - fator 7
     |       |
   fator     5
@@ -154,16 +154,16 @@ Gramática
   <exp> ::= <fator> ^ <exp> | <fator>
   <fator> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
-Sentença           ┌------------┬-----------------┐
+Sentença           ┌────────────┬─────────────────┐
                    | Operadores | Associatividade |
   2 ^ 3 ^ 4        |     ^      |     direita     |
-                   └------------┴-----------------┘
+                   └────────────┴─────────────────┘
 
 Árvore sintática
        exp
-    ┌---┼---┐
+    ┌───┼───┐
   fator ^  exp
-    |   ┌---┼--┐
+    |   ┌───┼──┐
     2 fator ^ exp
         |      |
         3      4
@@ -184,17 +184,17 @@ Gramática
 ```
 
 ```
-Sentenças          ┌-------┬------------┬-----------------┐
+Sentenças          ┌───────┬────────────┬─────────────────┐
                    | Nível | Operadores | Associatividade |
   8 * 5 - 3        |   1   |   * , /    |     direita     |
   8 - 5 * 3        |   2   |   + , -    |     direita     |
-                   └-------┴------------┴-----------------┘
+                   └───────┴────────────┴─────────────────┘
 
 Árvores sintáticas
             exp2                    exp2
-        ┌----┼---┐              ┌----┼---┐
+        ┌────┼───┐              ┌────┼───┐
        exp2  -  exp1          exp2   -  exp1
-    ┌---┼---┐     |            |     ┌---┼---┐
+    ┌───┼───┐     |            |     ┌───┼───┐
    exp1 * fator fator   //    exp1  exp1 * fator
     |       |     |            |     |       |
   fator     5     3          fator fator     3

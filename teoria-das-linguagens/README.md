@@ -83,7 +83,7 @@ A = { aa, ba, c }
 - Tem 1 operando (conjunto finito e não vazio)
 - Retona um conjunto infinito
 - **Fechamento recursivo e transitivo `Σ*`:** É um fechamento que inclui todos os elementos possíveis, inclusive o vazio ε
-- **Fechamento transitivo `Σ+`:** É um fechamento que inclui quase todos os elementos possíveis, excluindo o vazio ε
+- **Fechamento transitivo `Σ⁺`:** É um fechamento que inclui quase todos os elementos possíveis, excluindo o vazio ε
 - **Representação:** Σ\* (recursivo e transitivo) ou Σ⁺ (transitivo)
   - Σ\* = Σ⁺ U { ε }
   - ε ∉ Σ⁺

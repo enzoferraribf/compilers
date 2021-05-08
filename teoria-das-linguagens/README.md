@@ -31,7 +31,7 @@
 | Sentença  |      x      |      x       |                                   |                       |                            |
 | Linguagem |             |              |                x\*                |          x\*          |             x              |
 
-- Desde que finita e não vazia
+\* Desde que finita e não vazia
 
 ### Comprimento
 

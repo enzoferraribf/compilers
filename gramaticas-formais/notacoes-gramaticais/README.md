@@ -145,7 +145,7 @@ Gera `L = { ε, c, aa, caa, baa, bbaa, bbbaa, ... }`
 |     `a`     |        terminal         |
 |    `(Ω)`    |       agrupamento       |
 |    `Ω*`     |       iteração 0+       |
-|    `Ω+`     |       iteração 1+       |
+|    `Ω⁺`     |       iteração 1+       |
 |             |   construção opcional   |
 |             |  sinal de substituição  |
 |   `Ω\|Ω`    |           ou            |
@@ -162,7 +162,7 @@ Gera `L = { ε, c, aa, caa, baa, bbaa, bbbaa, ... }`
 ### Exemplo
 
 ```
-a* (b c)+ | a b b*
+a* (b c)⁺ | a b b*
 ```
 
 Gera `L = { bc, abc, aabc, aabcbc, ab, abb, abbb, ... }`
@@ -181,7 +181,7 @@ Gera `L = { bc, abc, aabc, aabcbc, ab, abb, abbb, ... }`
 |     `a`     |        terminal         |
 |    `(Ω)`    |       agrupamento       |
 |    `Ω*`     |       iteração 0+       |
-|    `Ω+`     |       iteração 1+       |
+|    `Ω⁺`     |       iteração 1+       |
 |             |   construção opcional   |
 |     `=`     |  sinal de substituição  |
 |   `Ω\|Ω`    |           ou            |
@@ -199,7 +199,7 @@ Gera `L = { bc, abc, aabc, aabcbc, ab, abb, abbb, ... }`
 ### Exemplo
 
 ```
-S = a* (b c)+ X
+S = a* (b c)⁺ X
 X = a b | b* | c+ b
 ```
 
@@ -233,7 +233,7 @@ expressão regular: ba
 ```
 
 ```
-expressão regular: a+
+expressão regular: a⁺
 
 ---a-•->
  ↑   |

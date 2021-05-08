@@ -155,6 +155,42 @@ Aqui, valem-se as regras:
 
 ## **BNF -> Wirth**
 
-Para transformar da notação de **BNF** para **Wirth** deve-se seguir os seguintes passos:
+Para cada lei de substituição, deve se aplicar as regras a seguir.
 
-// TODO
+Sempre que houver alternativas (`|`), analise cada uma, buscando o seguinte:
+
+- Se houver **recursão à direita**, elimine, e troque por `{ }` no ínicio da cadeia
+
+```
+          ↓
+<S> ::= xy<S> | <S><A> | c<B> | <N>d | <S>xx | a<A> | ε | xx<S>z
+
+S = {"x""y"} ...
+```
+
+- Se houver **recursão à esquerda**, elimine, e troque por `{ }` no final da cadeia
+
+```
+                  ↓                      ↓
+<S> ::= xy<S> | <S><A> | c<B> | <N>d | <S>xx | a<A> | ε | xx<S>z
+
+S = {"x""y"} ... {A | xx}
+```
+
+- Se **não** houver recursão, coloque no meio da cadeia entre `( )` (caso não haja `ε`), ou `[ ]` (caso haja)
+
+```
+                          ↓      ↓              ↓     ↓
+<S> ::= xy<S> | <S><A> | c<B> | <N>d | <S>xx | a<A> | ε | xx<S>z
+
+S = {"x""y"}["c"B | N"d" | "a"A]{A | xx}
+```
+
+- Se houver **recursão ao centro**, não é possível eliminar, então ficará no meio, junto com as não recursões
+
+```
+                                                            ↓
+<S> ::= xy<S> | <S><A> | c<B> | <N>d | <S>xx | a<A> | ε | xx<S>z
+
+S = {"x""y"}["c"B | N"d" | "a"A | xxSz]{A | xx}
+```

@@ -186,8 +186,8 @@ Gramática
 ```
 Sentenças          ┌───────┬────────────┬─────────────────┐
                    | Nível | Operadores | Associatividade |
-  8 * 5 - 3        |   1   |   * , /    |     direita     |
-  8 - 5 * 3        |   2   |   + , -    |     direita     |
+  8 * 5 - 3        |   1   |   * , /    |     esquerda    |
+  8 - 5 * 3        |   2   |   + , -    |     esquerda    |
                    └───────┴────────────┴─────────────────┘
 
 Árvores sintáticas

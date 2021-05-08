@@ -53,7 +53,6 @@ A = { aa, ba, c }
 | aa | = 1
 | ε | = 0
 | aaaaaaa | = ? (invalida, não é cadeia de átomos do alfabeto A)
-
 ```
 
 ### Concatenação

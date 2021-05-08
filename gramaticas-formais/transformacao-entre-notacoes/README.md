@@ -24,27 +24,23 @@ P = {
 **1º** - Identificar os símbolos não terminais e batizá-los na nova notação "<>"
 
 ```
-P = {
-  <S> -> <M>a,
-  <M> -> b<M>,
-  <M> -> ε
-}
+<S> -> <M>a
+<M> -> b<M>
+<M> -> ε
 ```
 
 **2º** Agrupar as regras da mesma cadeia geradora em uma única regra
 
 ```
-P = {
-  <S> -> <M>a,
-  <M> -> b<M> | ε
-}
+<S> -> <M>a
+<M> -> b<M> | ε
 ```
 
 **3º** Substituir o sinal de atribuição para ::=
 
 ```
-  <S> ::= <M>a,
-  <M> ::= b<M> | ε
+<S> ::= <M>a
+<M> ::= b<M> | ε
 ```
 
 ## **BNF -> PG**
@@ -52,14 +48,14 @@ P = {
 Para transformar da notação de **BNF** para **Produção Gramatical** deve-se seguir os seguintes passos:
 
 ```
-  <S> ::= <M>a,
-  <M> ::= b<M> | ε
+<S> ::= <M>a
+<M> ::= b<M> | ε
 ```
 
 **1º** Identifica no BNF o símbolo inicial (primeiro símbolo) e monta a definição dos quatro elementos da gramática
 
 ```
-G = (V, Σ, P, S)
+G = ( , , , S)
 ``` 
 
 **2º** Monta o vocabulário com todos os símbolos utilizados
@@ -74,7 +70,7 @@ V = { S, M, a, b }
 Σ = { a, b }
 ```
 
-**4º** Monta o conjunto das produlões com uma alternativa de substituição em cada regra
+**4º** Monta o conjunto das produções com uma alternativa de substituição em cada regra
 
 ```
 P = {

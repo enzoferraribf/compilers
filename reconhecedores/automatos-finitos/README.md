@@ -43,7 +43,7 @@ Processo de aplicação do conjunto de regras de teste para uma determinada cade
 ## Exemplo
 
 ```
-M = (Q, Σ, P, q0, F)
+M = (Q, Σ, P, A, F)
 Q = { A, B }
 Σ = { 0, 1 }
 P = {

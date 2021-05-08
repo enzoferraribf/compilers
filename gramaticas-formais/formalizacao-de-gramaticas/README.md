@@ -29,7 +29,7 @@ Conjunto das leis de formação de sentenças
 - **Formato:** `α -> β`
   - cadeia `α` gera cadeia `β`
   - `α ∊ V*.N.V*`: `α` precisa ter ao menos 1 elemento não terminal
-  - `β ∊ V*`: `β` precisa ter ao menos 1 elemento não terminal
+  - `β ∊ V*`: `β` precisa ser formado de qualquer combinação de elementos do conjunto `V`
 
 ## Símbolo Inicial `S`
 

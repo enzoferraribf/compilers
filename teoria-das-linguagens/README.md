@@ -84,9 +84,9 @@ A = { aa, ba, c }
 - Retona um conjunto infinito
 - **Fechamento recursivo e transitivo `Σ*`:** É um fechamento que inclui todos os elementos possíveis, inclusive o vazio ε
 - **Fechamento transitivo `Σ+`:** É um fechamento que inclui quase todos os elementos possíveis, excluindo o vazio ε
-- **Representação:** Σ\* (recursivo e transitivo) ou Σ+ (transitivo)
-  - Σ\* = Σ+ U { ε }
-  - ε ∉ Σ+
+- **Representação:** Σ\* (recursivo e transitivo) ou Σ⁺ (transitivo)
+  - Σ\* = Σ⁺ U { ε }
+  - ε ∉ Σ⁺
 
 ### Concatenação de Linguagens
 

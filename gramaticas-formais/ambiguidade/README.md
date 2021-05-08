@@ -5,7 +5,7 @@ Toda produção gramatical pode ser expressa como uma **árvore sintática**.
 ```
 Gramática
   <S> ::= <A><B>
-  <A> ::= aa<A>
+  <A> ::= aa<A> | ε
   <B> ::= <B>bb | a
 
 Geração da sentença "aaaaabb"

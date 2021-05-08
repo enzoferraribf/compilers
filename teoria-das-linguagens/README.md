@@ -70,9 +70,9 @@ A = { aa, ba, c }
   - α e β: atomos ou cadeias
   - δ: cadeia resultante
 - **Propriedades:**
-  - Associativo: (α . β) . δ <=> α . (β . δ)
-  - Não comutativo: (α . β) <=> (β . α)
-  - Elemento neutro (cadeia vazia): α . ε = ε . α = α
+  - Associativo: `(α . β) . δ = α . (β . δ)`
+  - Não comutativo: `(α . β) ≠ (β . α)`
+  - Elemento neutro (cadeia vazia): `α . ε = ε . α = α`
 - **Ambiguidade:** Pode acontecer quando a concatenação resultar em uma cadeia idêntica a um átomo do alfabeto.
   - Ex.: A = { a, b, ab }; |ab| = 1 ou 2 ? mistério
 

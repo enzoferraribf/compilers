@@ -38,7 +38,7 @@ São formatações para formalização de gramáticas.
 | Legenda  |                         |
 | :------: | :---------------------: |
 |   `A`    | elemento qualquer `∊ N` |
-|   `b`    | elemento qualquer `∊ V` |
+|   `b`    | elemento qualquer `∊ Σ` |
 | `x`, `y` | cadeia qualquer `∊ V*`  |
 
 ### Exemplo

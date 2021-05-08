@@ -15,7 +15,7 @@ Quando uma gramática define uma linguagem
 
 Define a forma geral de todas as sentenças de uma linguagem
 
-- `x+`: Um símbolo x deve aparecer pelo menos uma vez
+- `x⁺`: Um símbolo x deve aparecer pelo menos uma vez
 - `x*`: Um símbolo x deve aparecer zero ou mais vezes
 - `x|y`: Indica uma alternativa entre o símbolo x ou y
 - `()`: Agrupa cadeias a serem trabalhadas

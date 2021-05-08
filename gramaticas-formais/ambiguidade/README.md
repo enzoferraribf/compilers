@@ -135,8 +135,8 @@ Sentença           ┌────────────┬──────
       exp  + fator
     ┌──┼───┐   |
    exp - fator 7
-    |       |
-  fator     5
+    |      |
+  fator    5
     |
     8
 ```

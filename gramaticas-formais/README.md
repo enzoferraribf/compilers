@@ -13,7 +13,7 @@
 
 ## Exemplo
 
-gramática que descreve `(xy)+|zx*`
+gramática que descreve `(xy)⁺|zx*`
 
 ```
 G = (V, Σ, P, S)

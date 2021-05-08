@@ -173,7 +173,6 @@ Gera `L = { bc, abc, aabc, aabcbc, ab, abb, abbb, ... }`
 - **Não terminais** são definidos quando há lei que o substitua
 - Permite **recursão**
 - O **vocabulário** e o **alfabeto** são implicitamente declarados
-- Não há **símbolo inicial**
 
 | Simbologia  |       Significado       |
 | :---------: | :---------------------: |

@@ -1,6 +1,6 @@
 # Formalização de Gramáticas
 
-Uma gramática é uma quádrupla ordena `G = (V, Σ, P, S)`, sendo:
+Uma gramática é uma quádrupla ordenada `G = (V, Σ, P, S)`, sendo:
 
 - `V` vocabulário
 - `Σ` alfabeto
